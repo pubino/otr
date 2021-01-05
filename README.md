@@ -46,7 +46,7 @@ If you scheduled a delay, leave the Script Editor app open until the meeting is 
 
 #### Advanced Usage
 
-If Meeting URL is hardcoded and the default 2 hour record time is acceptable, all of the other prompts can be ignored.  Instances of the script can then be saved as apps and potentially triggered via the Calendar app using event alerts.
+If Meeting URL is hardcoded and the default 2 hour record time is acceptable, all of the other prompts can be ignored (the script dismisses them after ~15 seconds!).  Instances of the script can then be saved as apps and potentially triggered via the Calendar app using event alerts.
 
 ## Future Plans
 
