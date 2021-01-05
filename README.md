@@ -5,6 +5,7 @@ Attend and record talks while you sleep.
 ## Limitations
 
 * Only supports Zoom URLs for meetings and webinars.
+* Only supports one meeting (delayed or immediate) at a time. 
 * Only records internal microphone, not system audio.
 * Requires manually preconfiguring screen recording defaults.
 * Requires preventing machine from sleeping via Energy Saver.
@@ -35,10 +36,18 @@ Overnight Talk Recorder (OTR) is an automation script written in [AppleScript](h
 
 ### Usage
 
-1. Click the Play button to Run the Script, or click Run under the Script menu inside of the Script Editor app.
-2. 
+1. Calculate the time to delay the attempt to join the meeting (in seconds) and the expected meeting duration (in seconds).  
+2. Open the script in the Script Editor app found inside the Applications/Utilities folder.
+3. Click the Play button found in the toolbar to run the script.
+2. Provide a Meeting URL; the script will quit otherwise.
+3. Provide the time to delay the attempt to join and record the meeting.
+4. Provide the duration of the meeting.
+
+If you scheduled a delay, leave the Script Editor app open until the meeting is complete.  Shortly before the scheduled time, the script will save all open Safari windows and tabs and close them automatically.  It will increase system volume to 65% of maximum as audio recording is done via whatever the internal microphone can pick up.  Safari's windows will be restored at the conclusion of the recording, and the script will attempt to exit the meeting gracefully.
 
 #### Advanced Usage
+
+If Meeting URL is hardcoded and the default 2 hour record time is acceptable, all of the other prompts can be ignored.  Instances of the script can then be saved as apps and potentially triggered via the Calendar app using event alerts.
 
 ## Future Plans
 
@@ -46,4 +55,4 @@ Overnight Talk Recorder (OTR) is an automation script written in [AppleScript](h
 * Eliminate screen recording preconfiguration requirement.
 * Eliminate Energy Saver modification requirement.
 * Create a similar workflow on Windows and Linux platforms, rexamine feasability on iOS.
-* Disavowing this code.
+* Disavow this code.
