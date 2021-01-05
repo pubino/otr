@@ -8,7 +8,7 @@ Attend and record talks while you sleep.
 * Only supports one meeting (delayed or immediate) at a time. 
 * Only records internal microphone, not system audio.
 * Requires manually preconfiguring screen recording defaults.
-* Requires preventing machine from sleeping via Energy Saver.
+* Requires preventing machine from sleeping via Energy Saver or third-party utility.
 * Requires Security & Privacy exemptions for Accessibility.
 * Requires temporarily closing all open Safari pages and tabs.
 * Written in 1993 AppleScript.
