@@ -1,4 +1,4 @@
-# Overnight Talk Recorder
+# Overnight Talk Recorder (OTR)
 
 Attend and record talks while you sleep.
 
