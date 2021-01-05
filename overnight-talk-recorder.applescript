@@ -1,3 +1,4 @@
+--Hardcode values for the Meeting URL, start delay, or meeting duration (i.e., recording duration) to dismiss prompting and override the defaults.  Prompts timeout and accept default or hardcoded values set here after 15 seconds each.
 set meetingURL to ""
 set startDelay to ""
 set recordingDuration to ""
@@ -72,7 +73,6 @@ try
 				click menu bar item 1 ¬
 					of menu bar 1 ¬
 					of application process "screencaptureui"
-			
 			
 			try
 				tell application "System Events"
