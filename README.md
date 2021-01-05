@@ -53,5 +53,5 @@ If Meeting URL is hardcoded and the default 2 hour record time is acceptable, al
 * Add support for links other than Zoom.
 * Eliminate screen recording preconfiguration requirement.
 * Eliminate Energy Saver modification requirement.
-* Create a similar workflow on Windows and Linux platforms, rexamine feasability on iOS.
+* Create a similar workflow on Windows and Linux platforms, rexamine feasibility on iOS.
 * Disavow this code.
