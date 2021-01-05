@@ -10,7 +10,6 @@ Attend and record talks while you sleep.
 * Requires manually preconfiguring screen recording defaults.
 * Requires preventing machine from sleeping via Energy Saver or third-party utility.
 * Requires Security & Privacy exemptions for Accessibility.
-* Requires temporarily closing all open Safari pages and tabs.
 * Written in 1993 AppleScript.
 
 ## Features
