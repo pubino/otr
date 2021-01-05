@@ -2,6 +2,8 @@
 set meetingURL to ""
 set startDelay to ""
 set recordingDuration to ""
+set leaveMeetingFailureMsg to ""
+set volumeLevel to 65
 
 set meetingURL to text returned of (display dialog "Provide your Meeting URL" buttons {"Proceed"} default button "Proceed" default answer "" with icon 1)
 
@@ -22,12 +24,15 @@ if recordingDuration is "" then
 	set recordingDuration to 7200
 end if
 
-set SafariCloseChoice to display dialog "All Safari windows need to be closed to continue." with icon stop buttons {"Close All Safari Windows", "Cancel"} default button "Cancel" giving up after 5
+if startDelay is not 0 then
+	delay startDelay
+end if
+
+set SafariCloseChoice to display dialog "All Safari windows need to be closed to continue your delayed meeting recording." with icon stop buttons {"Close All Safari Windows", "Cancel"} default button "Cancel" giving up after 5
 
 if SafariCloseChoice is "Cancel" then
 	error number -128
 else
-	delay startDelay
 	try
 		tell application "Safari"
 			set url_list to URL of every document
@@ -56,7 +61,8 @@ try
 	tell application "System Events"
 		tell process "Safari"
 			click button "Allow" of group 1 of tab group 1 of splitter group 1 of window "Launch Meeting - Zoom"
-			-- Record
+			
+			set volume output volume volumeLevel
 			
 			tell application "QuickTime Player" to new screen recording
 			
@@ -76,7 +82,6 @@ try
 			
 			try
 				tell application "System Events"
-					set leaveMeetingFailureMsg to ""
 					set theID to (unix id of processes whose name is "zoom.us")
 					try
 						do shell script "kill -9 " & theID
