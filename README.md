@@ -14,14 +14,20 @@ Attend and record talks while you sleep.
 
 ## Features
 
-* Joins meeting or webinar via provided or hardcoded URL and initiates a video screen capture.
-* Delays the join and record process by a provided or hardcoded value (in seconds, defaults to 0).
+* Joins a meeting or webinar via provided or hardcoded URL, initiating and subsequently terminating a video screen capture.
+* Delays the join and record process by a provided or hardcoded value, allowing the process to run at some future time (in seconds, defaults to 0).
 * Leaves the meeting and ends the recording after a provided or hardcoded value (in seconds, defaults to 7200).
 * Restores closed Safari pages and tabs automatically.
 
 ## Installation
 
-1. 
+Overnight Talk Recorder (OTR) is an automation script written in AppleScript for Macintosh computers running macOS Big Sur 11.1 and higher.  Download the file or copy the text of the script and open it in the Script Editor app found inside the Applications/Utilities folder.
+
+
+
+## Usage
+
+
 
 ## Future Plans
 
