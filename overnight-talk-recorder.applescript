@@ -46,7 +46,7 @@ end if
 
 try
 	open location meetingURL
-	delay 2
+	delay 1
 on error
 	display dialog "Unable to open Meeting URL.  Please check that it is valid and try again.  No attempt was made to join the meeting."
 end try
